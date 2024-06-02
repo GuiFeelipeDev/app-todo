@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+    "name": "Vídeo Legal",
+    "password": "12345",
+    "email":"teste@gmail.com",
+    "terms": true,
+    "favorite_framework": "next"
+}
+
+###
+GET http://localhost:3000/api/user/?id=2
+
+###
+POST http://localhost:3000/api/todo
+Content-Type: application/json
+
+{
+    "title": "Uma tarefa 2",
+    "isCompleted": false,
+    "userId": 1
+}
+###
+GET http://localhost:3000/api/todo/?id=1
+
+###
+PATCH http://localhost:3000/api/todo/?id=1
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+###
+DELETE http://localhost:3000/api/todo/?id=1
